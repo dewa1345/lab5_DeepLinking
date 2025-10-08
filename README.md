@@ -1,16 +1,11 @@
-# deep_link_demo
+## Reflection Question 
+1. Concept Check
+Route di flutter lebih gampang untuk di mengerti dan diumpamakan seperti stack dan dapat melompat/berpindah screen tapi harus 1 persatu. sedangkan deep linking dapat membuat user melompati screen tertentu untuk mencapai tujuan
+2. Technical understanding
+peran uni links untuk dapat merespon link yang ditulis di terminal, jika deep link dimasukkan lewat terminal saat app masih berjalan maka method urlLinkStream akan link yang masuk
+3. Debugging insight
+pubspec.yaml dan juga AndroidManifest.xml untuk mengecek apakah saya menulis dependencies nya dan check versinya yang benar dan juga nama manifest
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Summary
+Deep linking mengintegrasikan navigasi flutter dengan URL melalui terminal agar dapat memberikan data, Skenario dimana deep linking berguna adalah saat kita ingin membagikan sesuatu ke teman entah itu video atau post media social kita hanya harus memberikan links video atau social media,tantangan yang saya dapat adalah bagian step 1~13 dan cara saya menyelesaikan adalah menggunakan teman saya yang sangat baik dan pintar rajin menabung
