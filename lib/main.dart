@@ -45,11 +45,9 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _handleIncomingLink(Uri uri) {
-    // Support myapp://details/test-item and myapp://details?id=test-item
+    // Misal link: myapp://details?id=123
     if (uri.pathSegments.isNotEmpty && uri.pathSegments.first == 'details') {
-      final id = uri.pathSegments.length > 1
-          ? uri.pathSegments[1]
-          : (uri.queryParameters['id'] ?? 'unknown');
+      final id = uri.queryParameters['id'] ?? 'unknown';
       Navigator.push(
         context,
         MaterialPageRoute(builder: (_) => DetailScreen(id: id)),
@@ -86,6 +84,6 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Details')),
       body: Center(child: Text('You opened item ID: $id')),
-);
-}
+    );
+  }
 }
