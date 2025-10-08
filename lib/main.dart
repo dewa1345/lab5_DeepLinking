@@ -24,13 +24,13 @@ class _MyAppState extends State<MyApp> {
     _appLinks = AppLinks();
 
     try {
-      // ⿡ Handle initial link (when app opened from a link)
+      // 1️⃣ Handle initial link (when app opened from a link)
       final initialUri = await _appLinks.getInitialLink();
       if (initialUri != null) {
         _handleIncomingLink(initialUri);
       }
 
-      // ⿢ Listen for links while app is running
+      // 2️⃣ Listen for links while app is running
       _sub = _appLinks.uriLinkStream.listen(
         (Uri uri) {
           _handleIncomingLink(uri);
@@ -84,6 +84,6 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Details')),
       body: Center(child: Text('You opened item ID: $id')),
-    );
-  }
+);
+}
 }
