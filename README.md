@@ -2,7 +2,7 @@
 1. Concept Check
 Route di flutter lebih gampang untuk di mengerti dan diumpamakan seperti stack dan dapat melompat/berpindah screen tapi harus 1 persatu. sedangkan deep linking dapat membuat user melompati screen tertentu untuk mencapai tujuan
 2. Technical understanding
-peran uni links untuk dapat merespon link yang ditulis di terminal, jika deep link dimasukkan lewat terminal saat app masih berjalan maka method urlLinkStream akan link yang masuk
+peran App_links untuk dapat merespon link yang ditulis di terminal, jika deep link dimasukkan lewat terminal saat app masih berjalan maka method urlLinkStream akan link yang masuk
 3. Debugging insight
 pubspec.yaml dan juga AndroidManifest.xml untuk mengecek apakah saya menulis dependencies nya dan check versinya yang benar dan juga nama manifest
 
